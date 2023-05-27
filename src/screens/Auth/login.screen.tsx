@@ -26,7 +26,7 @@ const Login: React.FC<Props> = ({navigation}) => {
           <Text style={styles.title}>Login</Text>
           <Input
             leftIcon={IconName.PHONE}
-            placeholder="Phone number"
+            placeholder="Phone Number"
             inputType={InputType.NUMERIC}
             onChange={setPhoneNumber}
           />
