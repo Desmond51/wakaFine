@@ -33,7 +33,7 @@ const Login: React.FC<Props> = ({navigation}) => {
           <View style={styles.buttonContainer}>
             <Button
               btnText="Continue"
-              onPress={() => navigation.navigate('Main')}
+              onPress={() => navigation.navigate('Verification')}
             />
             <Text style={styles.or}>OR</Text>
             <SocialButton

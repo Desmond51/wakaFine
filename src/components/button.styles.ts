@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     alignItems: 'center',
     paddingVertical: 5,
-    paddingHorizontal: 25,
+    paddingHorizontal: 5,
   },
   spaceRight: {
     marginRight: 10,

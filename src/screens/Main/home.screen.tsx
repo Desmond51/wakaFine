@@ -10,7 +10,7 @@ type Props = {
 const Home: React.FC<Props> = ({navigation}) => {
   return (
     <View>
-      <Text>Home {config.GOOGLE_API_KEY}</Text>
+      <Text>Home</Text>
       <Button
         btnText={'Next'}
         btnType={ButtonType.PRIMARY}

@@ -1,7 +1,15 @@
-import {View, Text, Image, ScrollView, useWindowDimensions} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  ScrollView,
+  useWindowDimensions,
+  TouchableOpacity,
+} from 'react-native';
 import React, {useState} from 'react';
-import {Button, ButtonType, OTPInput} from '../../components';
+import {Button, ButtonType, Icon, IconName, OTPInput} from '../../components';
 import styles from './verification.styles';
+import theme from '../../utils/theme';
 
 type Props = {
   navigation: any;
@@ -13,7 +21,16 @@ const Verification: React.FC<Props> = ({navigation}) => {
 
   return (
     <View style={[styles.container, {width}]}>
-      <Text style={styles.title}>Verification</Text>
+      <View style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Icon
+            iconName={IconName.ARROW_LEFT}
+            size={30}
+            color={theme.PRIMARY}
+          />
+        </TouchableOpacity>
+        <Text style={styles.title}>Verification</Text>
+      </View>
       <Image
         source={require('../../assets/otp.png')}
         style={[styles.image, {width, resizeMode: 'contain'}]}
@@ -23,13 +40,16 @@ const Verification: React.FC<Props> = ({navigation}) => {
           <Text style={styles.description}>
             Enter the verification code we just sent this Number *******22
           </Text>
-          <View style={styles.or}>
-            <OTPInput value={value} setValue={setValue} cellCount={6} />
-            <Text style={styles.flexView}>
-              Haven’t received a code yet! Resend
-            </Text>
+          <OTPInput value={value} setValue={setValue} cellCount={6} />
+          <View style={styles.flexView}>
+            <Text style={styles.or}>Haven’t received a code yet!</Text>
+            <Button
+              btnText="Resend"
+              btnType={ButtonType.TEXT}
+              onPress={() => {}}
+            />
           </View>
-          <View style={styles.bottomContainer}>
+          <View style={styles.buttonContainer}>
             <Button
               btnText="Verify"
               btnType={ButtonType.PRIMARY}

@@ -18,6 +18,7 @@ export enum IconName {
   BUS = 'bus',
   BELL = 'bell',
   MENU = 'align-justify',
+  ARROW_LEFT = 'arrow-left',
 }
 
 const Icon: React.FC<Props> = ({iconName, size = 25, color = 'black'}) => {

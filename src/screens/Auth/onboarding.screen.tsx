@@ -57,7 +57,7 @@ const Onboarding: React.FC<Props> = ({navigation}) => {
           />
         ) : (
           <Button
-            btnType={ButtonType.PRIMARY}
+            btnType={ButtonType.TEXT}
             btnText="Skip"
             icon={IconName.PLAY}
             onPress={() =>
