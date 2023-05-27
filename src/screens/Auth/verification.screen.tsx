@@ -25,15 +25,17 @@ const Verification: React.FC<Props> = ({navigation}) => {
           </Text>
           <View style={styles.or}>
             <OTPInput value={value} setValue={setValue} cellCount={6} />
-            <Text style={styles.flexView}>Haven’t received a code yet! Resend</Text>
+            <Text style={styles.flexView}>
+              Haven’t received a code yet! Resend
+            </Text>
           </View>
-            <View style={styles.bottomContainer}>
-              <Button
-                btnText="Verify"
-                btnType={ButtonType.PRIMARY}
-                onPress={() => navigation.navigate('Main')}
-              />
-            </View>
+          <View style={styles.bottomContainer}>
+            <Button
+              btnText="Verify"
+              btnType={ButtonType.PRIMARY}
+              onPress={() => navigation.navigate('Main')}
+            />
+          </View>
         </ScrollView>
       </View>
     </View>
