@@ -1,22 +1,11 @@
-import {View, Text} from 'react-native';
 import React from 'react';
-import {Button, ButtonType} from '../../components';
+import {Text, View} from 'react-native';
+import styles from './signup.styles';
 
-type Props = {
-  navigation: any;
+const SignInScreen = ({navigation}) => {
+  return <View style={styles.container}>
+    <Text>Sign up</Text>
+  </View>;
 };
 
-const SignUp: React.FC<Props> = ({navigation}) => {
-  return (
-    <View>
-      <Text>SignUp</Text>
-      <Button
-        btnText={'Next'}
-        btnType={ButtonType.PRIMARY}
-        onPress={() => navigation.navigate('Login')}
-      />
-    </View>
-  );
-};
-
-export default SignUp;
+export default SignInScreen;

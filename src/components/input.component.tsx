@@ -34,7 +34,7 @@ const Input: React.FC<Props> = ({
         style={styles.input}
         onChangeText={onChange}
         placeholder={placeholder}
-        placeholderTextColor={'gray'}
+        placeholderTextColor={theme.PRIMARY}
         inputMode={
           inputType === InputType.EMAIL
             ? 'email'

@@ -4,6 +4,7 @@ import {onboardingData} from '../../utils/constants';
 import OnboardingItem from '../../components/onboardingItem.component';
 import styles from './onboarding.styles';
 import Paginator from '../../components/paginator.component';
+import {Button, ButtonType, IconName} from '../../components';
 
 type Props = {
   navigation: any;
@@ -17,6 +18,13 @@ const Onboarding: React.FC<Props> = ({navigation}) => {
   const viewableItemsChanged = useRef(({viewableItems}: any) => {
     setCurrentIndex(viewableItems[0].index);
   }).current;
+
+  console.log(
+    'current index: ',
+    currentIndex,
+    'last index: ',
+    onboardingData.length,
+  );
   return (
     <View style={styles.container}>
       <View style={styles.flatListContainer}>
@@ -35,13 +43,31 @@ const Onboarding: React.FC<Props> = ({navigation}) => {
           onViewableItemsChanged={viewableItemsChanged}
           ref={slidesRef}
         />
-        {/* <Button
-        btnText={'Next'}
-        btnType={ButtonType.PRIMARY}
-        onPress={() => navigation.navigate('Signup')}
-      /> */}
       </View>
-      <Paginator items={onboardingData} scrollX={scrollX} />
+      <Paginator
+        items={onboardingData}
+        scrollX={scrollX}
+        currentIndex={currentIndex}
+      />
+      <View style={styles.buttonWrapper}>
+        {currentIndex === onboardingData.length - 1 ? (
+          <Button
+            btnText="Sign up"
+            onPress={() => navigation.navigate('Signup')}
+          />
+        ) : (
+          <Button
+            btnType={ButtonType.TEXT}
+            btnText="Skip"
+            icon={IconName.PLAY}
+            onPress={() =>
+              slidesRef.current.scrollToIndex({
+                index: onboardingData.length - 1,
+              })
+            }
+          />
+        )}
+      </View>
     </View>
   );
 };

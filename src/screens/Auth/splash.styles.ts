@@ -1,19 +1,12 @@
 import {StyleSheet} from 'react-native';
+import theme from '../../utils/theme';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  flatListContainer: {
-    flex: 3,
-  },
-  buttonWrapper: {
-    // backgroundColor: 'red',
-    padding: 24,
-    alignSelf: 'flex-end',
-    marginHorizontal: 'auto',
+    backgroundColor: theme.PRIMARY,
   },
 });
 
