@@ -14,7 +14,7 @@ const Login: React.FC<Props> = ({navigation}) => {
       <Text>{phoneNumber}</Text>
       <Input
         placeholder="Phone number"
-        rightIcon={IconName.PHONE}
+        leftIcon={IconName.PHONE}
         onChange={setPhoneNumber}
       />
       <Button

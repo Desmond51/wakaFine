@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import AuthNavigator from './auth.navigator';
 import MainNavigator from './main.navigator';
-import {Splash} from '../screens';
+import SplashNavigator from './splash.navigator';
 
 const RootStack = createStackNavigator();
 
@@ -13,7 +13,7 @@ const RootNavigator = () => {
       <RootStack.Navigator
         initialRouteName="Splash"
         screenOptions={{headerShown: false}}>
-        <RootStack.Screen name="Splash" component={Splash} />
+        <RootStack.Screen name="Splash" component={SplashNavigator} />
         <RootStack.Screen name="Auth" component={AuthNavigator} />
         <RootStack.Screen name="Main" component={MainNavigator} />
       </RootStack.Navigator>

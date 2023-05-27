@@ -13,7 +13,7 @@ const Splash: React.FC<Props> = ({navigation}) => {
       <Button
         btnText={'Next'}
         btnType={ButtonType.PRIMARY}
-        onPress={() => navigation.navigate('Onboarding')}
+        onPress={() => navigation.navigate('Auth')}
       />
     </View>
   );
