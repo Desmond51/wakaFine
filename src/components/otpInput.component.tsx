@@ -6,7 +6,6 @@ import {
   useBlurOnFulfill,
   useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import styles from './otpInput.styles';
 import theme from '../utils/theme';
@@ -25,7 +24,6 @@ const OTPInput: React.FC<Props> = ({cellCount = 6, value, setValue}) => {
 
   return (
     <SafeAreaView style={styles.root}>
-      <Text style={styles.title}>Verification</Text>
       <CodeField
         ref={ref}
         {...props}
@@ -45,7 +43,6 @@ const OTPInput: React.FC<Props> = ({cellCount = 6, value, setValue}) => {
           </Text>
         )}
       />
-      <FontAwesome name="phone" size={25} color={theme.PRIMARY} />
     </SafeAreaView>
   );
 };

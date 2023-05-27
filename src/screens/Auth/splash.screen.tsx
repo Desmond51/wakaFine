@@ -1,20 +1,21 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import {View, Text, Image} from 'react-native';
+import React, {useEffect} from 'react';
 import {Button, ButtonType} from '../../components';
+import styles from './splash.styles';
 
 type Props = {
   navigation: any;
 };
 
 const Splash: React.FC<Props> = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Auth');
+    }, 3000);
+  }, [navigation]);
   return (
-    <View>
-      <Text>Splash</Text>
-      <Button
-        btnText={'Next'}
-        btnType={ButtonType.PRIMARY}
-        onPress={() => navigation.navigate('Auth')}
-      />
+    <View style={styles.container}>
+      <Image source={require('../../assets/logo-white.png')} alt="logo" />
     </View>
   );
 };
