@@ -13,6 +13,11 @@ export enum IconName {
   PLAY = 'play',
   FACEBOOK = 'facebook',
   GOOGLE = 'google',
+  HOME = 'home',
+  BRIEFCASE = 'briefcase',
+  BUS = 'bus',
+  BELL = 'bell',
+  MENU = 'align-justify',
 }
 
 const Icon: React.FC<Props> = ({iconName, size = 25, color = 'black'}) => {

@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
   facebookText: {
     color: theme.FACEBOOK,
     marginRight: 10,
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '500',
   },
   googleText: {
     color: theme.GOOGLE,
     marginRight: 10,
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: '500',
   },
   googleWrapper: {

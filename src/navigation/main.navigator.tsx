@@ -1,6 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Home} from '../screens';
+import HomeNavigator from './home.navigator';
 
 const MainStack = createStackNavigator();
 const MainNavigator = () => {
@@ -8,7 +9,7 @@ const MainNavigator = () => {
     <MainStack.Navigator
       initialRouteName="Home"
       screenOptions={{headerShown: false}}>
-      <MainStack.Screen name="Home" component={Home} />
+      <MainStack.Screen name="HomeNavigator" component={HomeNavigator} />
     </MainStack.Navigator>
   );
 };

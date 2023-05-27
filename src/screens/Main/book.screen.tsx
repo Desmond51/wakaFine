@@ -1,16 +1,15 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 import {Button, ButtonType} from '../../components';
-import config from '../../../config';
 
 type Props = {
   navigation: any;
 };
 
-const Home: React.FC<Props> = ({navigation}) => {
+const Book: React.FC<Props> = ({navigation}) => {
   return (
     <View>
-      <Text>Home {config.GOOGLE_API_KEY}</Text>
+      <Text>Book</Text>
       <Button
         btnText={'Next'}
         btnType={ButtonType.PRIMARY}
@@ -20,4 +19,4 @@ const Home: React.FC<Props> = ({navigation}) => {
   );
 };
 
-export default Home;
+export default Book;
