@@ -2,6 +2,7 @@ import {View, Text} from 'react-native';
 import React, {useState} from 'react';
 import {Button, ButtonType, IconName, Input} from '../../components';
 
+
 type Props = {
   navigation: any;
 };

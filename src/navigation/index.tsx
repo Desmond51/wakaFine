@@ -11,10 +11,10 @@ const RootNavigator = () => {
   return (
     <NavigationContainer>
       <RootStack.Navigator
-        initialRouteName="Splash"
+        initialRouteName="Auth"
         screenOptions={{headerShown: false}}>
-        <RootStack.Screen name="Splash" component={Splash} />
         <RootStack.Screen name="Auth" component={AuthNavigator} />
+        <RootStack.Screen name="Splash" component={Splash} />
         <RootStack.Screen name="Main" component={MainNavigator} />
       </RootStack.Navigator>
     </NavigationContainer>
