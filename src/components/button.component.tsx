@@ -53,7 +53,7 @@ const Button: React.FC<Props> = ({
         <>
           <Icon
             iconName={icon}
-            size={25}
+            size={18}
             color={
               btnType === ButtonType.PRIMARY
                 ? 'white'
@@ -62,7 +62,6 @@ const Button: React.FC<Props> = ({
                 : theme.PRIMARY
             }
           />
-          <View style={styles.spaceRight} />
         </>
       )}
       {loading && (

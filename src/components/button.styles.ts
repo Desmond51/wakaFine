@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: theme.PRIMARY,
     alignItems: 'center',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingVertical: 5,
+    paddingHorizontal: 25,
     borderRadius: 200,
   },
   disabled: {
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   btnText: {
     color: 'white',
-    marginRight: 10,
+    // marginRight: 10,
     fontSize: 20,
     fontWeight: '500',
   },
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'white',
     alignItems: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 20,
+    paddingVertical: 5,
+    paddingHorizontal: 25,
     borderRadius: 14,
   },
   textWrapper: {
@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'transparent',
     alignItems: 'center',
+    paddingVertical: 5,
+    paddingHorizontal: 25,
   },
   spaceRight: {
     marginRight: 10,

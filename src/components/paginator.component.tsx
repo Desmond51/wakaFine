@@ -6,11 +6,11 @@ import theme from '../utils/theme';
 type Props = {
   items: {image: any; title: string; description: string; id: string}[];
   scrollX: any;
+  currentIndex: number;
 };
 
-const Paginator: React.FC<Props> = ({items, scrollX}) => {
+const Paginator: React.FC<Props> = ({items, scrollX, currentIndex}) => {
   const {width} = useWindowDimensions();
-  console.log('scroll X', scrollX);
   return (
     <View style={styles.container}>
       {items?.map((_, i) => {
@@ -22,13 +22,12 @@ const Paginator: React.FC<Props> = ({items, scrollX}) => {
           extrapolate: 'clamp',
         });
 
-        console.log('dot width: ', dotWidth);
         return (
           <Animated.View
             style={[
               styles.dot,
               {width: dotWidth},
-              {backgroundColor: theme.PRIMARY},
+              currentIndex === i && {backgroundColor: theme.PRIMARY},
             ]}
             key={i.toString()}
           />

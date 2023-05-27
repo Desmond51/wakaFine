@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
   flatListContainer: {
     flex: 3,
   },
+  buttonWrapper: {
+    // backgroundColor: 'red',
+    padding: 24,
+    alignSelf: 'flex-end',
+    marginHorizontal: 'auto',
+  },
 });
 
 export default styles;
