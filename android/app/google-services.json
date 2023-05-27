@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "815045431913",
+    "project_id": "asonganyianyah",
+    "storage_bucket": "asonganyianyah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815045431913:android:8031a889039f5c5f7488f8",
+        "android_client_info": {
+          "package_name": "com.wakafine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815045431913-kudhlt1m1nf16oa050jgmppaiks8csfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wakafine",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "815045431913-r684i4ukilp4jsq25mfe79hsua7a9e35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsaTx3FU1lYUIUyVhIX62iLABx24aw6yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815045431913-r684i4ukilp4jsq25mfe79hsua7a9e35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
