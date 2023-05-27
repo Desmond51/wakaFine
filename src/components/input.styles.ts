@@ -8,6 +8,14 @@ const styles = StyleSheet.create({
     fontSize: 24,
     borderBottomWidth: 2,
   },
+  iconContainer: {
+    position: 'absolute',
+    marginVertical: 15,
+    marginHorizontal: 5,
+  },
+  withIconLeft: {
+    paddingLeft: 40,
+  },
 });
 
 export default styles;

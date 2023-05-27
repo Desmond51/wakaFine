@@ -1,8 +1,51 @@
 import {StyleSheet} from 'react-native';
+import theme from '../../utils/theme';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    // alignItems: 'center',
+  },
+  image: {
+    flex: 0.4,
+    justifyContent: 'center',
+  },
+  bottomContainer: {
+    flex: 0.5,
+    paddingHorizontal: 32,
+    paddingVertical: 10,
+  },
+  title: {
+    fontWeight: '800',
+    color: theme.PRIMARY,
+    marginBottom: 10,
+    // textAlign: 'left',
+    fontSize: 36,
+  },
+  description: {
+    fontWeight: '500',
+    color: theme.PRIMARY,
+    textAlign: 'center',
+    fontSize: 20,
+  },
+  smallText: {
+    fontSize: 14,
+    color: theme.PRIMARY,
+    paddingTop: 10,
+    fontWeight: 10,
+  },
+  buttonContainer: {
+    width: '100%',
+    paddingHorizontal: 30,
+    paddingVertical: 50,
+  },
+  flexView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '90%',
+    alignSelf: 'center',
   },
 });
 

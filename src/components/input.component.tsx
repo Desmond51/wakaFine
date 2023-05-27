@@ -31,7 +31,7 @@ const Input: React.FC<Props> = ({
   return (
     <View>
       <TextInput
-        style={styles.input}
+        style={[styles.input, leftIcon && styles.withIconLeft]}
         onChangeText={onChange}
         placeholder={placeholder}
         placeholderTextColor={theme.PRIMARY}
@@ -42,14 +42,12 @@ const Input: React.FC<Props> = ({
             ? 'numeric'
             : 'text'
         }
-        secureTextEntry={inputType === InputType.PASSWORD}>
-        {leftIcon && (
-          <>
-            <Icon iconName={IconName.PHONE} color={theme.PRIMARY} size={25} />
-            {'   '}
-          </>
-        )}
-      </TextInput>
+        secureTextEntry={inputType === InputType.PASSWORD}></TextInput>
+      {leftIcon && (
+        <View style={styles.iconContainer}>
+          <Icon iconName={leftIcon} color={theme.PRIMARY} size={25} />
+        </View>
+      )}
     </View>
   );
 };
