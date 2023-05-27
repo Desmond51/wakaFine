@@ -54,13 +54,12 @@ const styles = StyleSheet.create({
   },
   facebookWrapper: {
     flexDirection: 'row',
-    width: '70%',
-    paddingVertical: 12,
-    paddingHorizontal: 4,
     alignItems: 'center',
     justifyContent: 'space-evenly',
     backgroundColor: theme.FACEBOOK + '30',
-    borderRadius: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 25,
+    borderRadius: 200,
   },
   facebookText: {
     color: theme.FACEBOOK,
@@ -77,12 +76,11 @@ const styles = StyleSheet.create({
   googleWrapper: {
     backgroundColor: theme.GOOGLE + '30',
     flexDirection: 'row',
-    width: '70%',
-    paddingVertical: 12,
-    paddingHorizontal: 4,
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    borderRadius: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 25,
+    borderRadius: 200,
   },
 });
 
