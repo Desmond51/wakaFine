@@ -11,7 +11,7 @@ const RootNavigator = () => {
   return (
     <NavigationContainer>
       <RootStack.Navigator
-        initialRouteName="Splash"
+        initialRouteName="Auth"
         screenOptions={{headerShown: false}}>
         <RootStack.Screen name="Splash" component={SplashNavigator} />
         <RootStack.Screen name="Auth" component={AuthNavigator} />
