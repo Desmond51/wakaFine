@@ -31,6 +31,7 @@ const Login: React.FC<Props> = ({navigation}) => {
             inputType={InputType.TEXT}
             onChange={setFullName}
           />
+          <View style={styles.spaceBottom} />
           <Input
             leftIcon={IconName.PHONE}
             placeholder="Phone number"
@@ -44,7 +45,7 @@ const Login: React.FC<Props> = ({navigation}) => {
           <View style={styles.buttonContainer}>
             <Button
               btnText="Continue"
-              onPress={() => navigation.navigate('Main')}
+              onPress={() => navigation.navigate('Login')}
             />
           </View>
           <View style={styles.flexView}>

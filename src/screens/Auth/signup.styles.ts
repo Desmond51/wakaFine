@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32,
     paddingVertical: 10,
   },
+  spaceBottom: {
+    marginBottom: 24,
+  },
   title: {
     fontWeight: '800',
     color: theme.PRIMARY,
@@ -33,7 +36,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: theme.PRIMARY,
     paddingTop: 10,
-    fontWeight: 10,
   },
   buttonContainer: {
     width: '100%',
