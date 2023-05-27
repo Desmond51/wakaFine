@@ -2,10 +2,7 @@ import {View, Text, Image, useWindowDimensions, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import {Button, ButtonType, IconName, Input, InputType} from '../../components';
 import styles from './signup.styles';
-import {
-  SocialButton,
-  SocialButtonType,
-} from '../../components/button.component';
+import auth from '@react-native-firebase/auth';
 
 type Props = {
   navigation: any;
@@ -14,7 +11,16 @@ type Props = {
 const Login: React.FC<Props> = ({navigation}) => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [fullName, setFullName] = useState('');
+  const [code, setCode] = useState('');
+  const [confirm, setConfirm] = useState(null);
   const {width} = useWindowDimensions();
+
+  const signInWithPhoneNumber = async () => {
+    const confirmation = await auth().signInWithPhoneNumber('+237650184172');
+    setConfirm(confirmation);
+  };
+
+  console.log('confirm: ', confirm);
   return (
     <View style={[styles.container, {width}]}>
       <Image
@@ -45,7 +51,8 @@ const Login: React.FC<Props> = ({navigation}) => {
           <View style={styles.buttonContainer}>
             <Button
               btnText="Continue"
-              onPress={() => navigation.navigate('Login')}
+              // onPress={() => navigation.navigate('Login')}
+              onPress={signInWithPhoneNumber}
             />
           </View>
           <View style={styles.flexView}>

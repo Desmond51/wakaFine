@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import theme from '../utils/theme';
 
 const styles = StyleSheet.create({
   focusedTab: {
@@ -7,7 +8,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
   },
   tab: {
-    backgroundColor: '#eeedf0',
+    backgroundColor: theme.GRAY,
     padding: 15,
     borderRadius: 18,
   },

@@ -19,12 +19,6 @@ const Onboarding: React.FC<Props> = ({navigation}) => {
     setCurrentIndex(viewableItems[0].index);
   }).current;
 
-  console.log(
-    'current index: ',
-    currentIndex,
-    'last index: ',
-    onboardingData.length,
-  );
   return (
     <View style={styles.container}>
       <View style={styles.flatListContainer}>
